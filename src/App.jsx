@@ -1,4 +1,5 @@
 import './App.css'
+import TodoList from './TodoList'
 
 function App() {
   const todoList = [
@@ -10,6 +11,7 @@ function App() {
   return (
     <div>
       <h1>Todo App</h1>
+      <TodoList/>
       <ul>
         {todoList.map(todo => <li key={todo.id}>{todo.title}</li>)}
       </ul>
